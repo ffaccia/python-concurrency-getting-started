@@ -1,7 +1,7 @@
 # thumbnail_maker.py
 import time
-import os
 import logging
+import os
 from urllib.parse import urlparse
 from urllib.request import urlretrieve
 
