@@ -10,6 +10,8 @@ from PIL import Image
 
 logging.basicConfig(filename='logfile.log', level=logging.DEBUG)
 
+#commento fittizio
+
 class ThumbnailMakerService(object):
     def __init__(self, home_dir='.'):
         self.home_dir = home_dir
