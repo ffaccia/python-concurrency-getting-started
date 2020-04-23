@@ -10,14 +10,15 @@ from PIL import Image
 
 logging.basicConfig(filename='logfile.log', level=logging.DEBUG)
 
-#commento fittizio
+
+#20200423. now i start to make modification to move to threading
 
 class ThumbnailMakerService(object):
     def __init__(self, home_dir='.'):
         self.home_dir = home_dir
         self.input_dir = self.home_dir + os.path.sep + 'incoming'
         self.output_dir = self.home_dir + os.path.sep + 'outgoing'
-
+         
     def download_images(self, img_url_list):
         # validate inputs
         if not img_url_list:
